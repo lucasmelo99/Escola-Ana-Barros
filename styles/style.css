@@ -158,16 +158,13 @@ nav a{
     width: 60%;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
 }
 
 .cards-diferencial{
     width: 300px;
-    height: 250px;
-    background-color: #f3f3f7;
-    border-radius: 10px;
 }
 
 .cards-diferencial img{
@@ -359,12 +356,6 @@ footer p{
 
 
 
-
-
-
-
-
-
 @media screen and (max-width: 1000px) {
     header{
         flex-wrap: wrap;
@@ -374,6 +365,9 @@ footer p{
     #fotos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    #container-escola{
+        flex-direction: column;
     }
     #nossa-escola{
         flex-wrap: wrap-reverse;
