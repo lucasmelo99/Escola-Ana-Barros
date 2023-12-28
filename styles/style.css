@@ -471,17 +471,8 @@ footer p{
         text-decoration: none;
     }
 
-    #fotos{
-        display: flex;
-        width: 100vw;
-        overflow-x: scroll;
-        scrollbar-width: none;
+    #container-img-declaraçao img{
+        width: 90vw;
     }
-
-    .thumbnail{
-        width: 80%;
-        height: auto;
-    }
-
     
 }
