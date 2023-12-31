@@ -465,5 +465,14 @@ footer p{
     #container-img-declaraçao img{
         width: 90vw;
     }
+
+    #nossos-valores h2{
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+    #depoimentos h2{
+        font-size: 27px;
+        padding-bottom: 20px;
+    }
     
 }
