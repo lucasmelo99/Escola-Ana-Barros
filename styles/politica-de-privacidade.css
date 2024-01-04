@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+a{
+    text-decoration: none;
+    color: #000287;
+}
+/* Cabeçalho */
+#flutuar{
+    position: fixed;
+    z-index: 2;
+    left: 30px;
+    bottom: 20px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px 10px 20px;
+    align-items: center;  
+    background-color: #fff;
+   
+}
+
+.burger{
+    display: none;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover{
+    transition: 0.7s;
+    border-bottom: 2px solid #000287;
+}
+
+#whatsapp{
+    background: red;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: white;
+    
+}
+/* FIM DO CABEÇALHO */
+
+
+
+main{
+    max-width: 900px;
+    padding: 32px;
+    margin: 50px auto;
+}
+h1,h2, h3{
+    color: red;
+    margin-bottom: 8px;
+}
+p{
+    color: #000287;
+    text-indent: 16px;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+
+/* Rodapé */
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    text-align: center;
+}
+
+#linha-footer{
+    border-top: 2px solid rgba(0, 0, 0, 0.521);
+    width: 50%;
+    margin-bottom: 24px;
+}
+
+.container-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    gap: 660px;
+}
+
+.rede-social{
+    display: flex;
+    gap: 4px;
+    font-size: xx-large;
+}
+
+
+.rede-social .bi-instagram{
+    color: #000287;
+    background: transparent;
+    padding: 13px 20px;
+    border-radius: 80px;
+}
+
+.rede-social .bi-facebook{
+    color: #000287;
+    background: transparent;
+    padding: 13px 20px;
+    border-radius: 80px;
+}
+
+
+footer p{
+    padding: 10px;
+    color: #272e3c9a;
+}
+
+@media screen and (min-width: 1150px){
+    .rede-social .bi-facebook:hover{
+        background:#3b5998;
+        color: #fff;
+    }
+
+    .rede-social .bi-instagram:hover{
+        background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        color: #fff;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 10px 0;
+    }
+    nav a{
+        font-size: 1rem;
+    }
+    .container-escola{
+        flex-direction: column;
+    }
+    
+    .container-footer{
+       flex-direction: column; 
+       gap: 40px;
+    }
+
+
+
+    
+
+}
+
+@media screen and (max-width: 870px) {
+    header{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .burger{
+        z-index: 3;
+        position: relative;
+        top: 0;
+        right: 0;
+        display: grid;
+        place-items: center;
+        padding: 0;
+        width: 82px;
+        height: 75px;
+        font-size: 30px;        
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    
+    .burger i:last-child{
+        display: none;
+    }
+    
+    body.open .burger i:first-child{
+        display: none;
+    }
+    
+    body.open .burger i:last-child{
+        display: block;
+        position: fixed;
+    }
+    .overlay{
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: transparent;
+        visibility: hidden;
+        opacity: 0;
+        backdrop-filter: blur(6px);
+        transition: 0.3;
+    }
+    
+    body.open .overlay{
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    header nav{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 2;
+        background: #272e3c;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 100%;
+        padding: 150px 20px;
+        translate: 100% 0;
+        transition: 0.3s;
+    
+    }
+    
+    body.open nav{
+        translate: 0;
+    }
+    
+    header nav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    
+    
+}

@@ -18,7 +18,7 @@ a{
 #flutuar{
     position: fixed;
     z-index: 2;
-    right: 30px;
+    left: 30px;
     bottom: 20px;
 }
 
@@ -317,10 +317,7 @@ footer{
     padding: 13px 20px;
     border-radius: 80px;
 }
-.rede-social .bi-instagram:hover{
-    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    color: #fff;
-}
+
 
 .rede-social .bi-facebook{
     color: #000287;
@@ -328,16 +325,25 @@ footer{
     padding: 13px 20px;
     border-radius: 80px;
 }
-.rede-social .bi-facebook:hover{
-    background:#3b5998;
-    color: #fff;
-}
+
 
 footer p{
     padding: 10px;
     color: #272e3c9a;
 }
 
+@media screen and (min-width: 1150px){
+    .rede-social .bi-facebook:hover{
+        background:#3b5998;
+        color: #fff;
+    }
+
+    .rede-social .bi-instagram:hover{
+        background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        color: #fff;
+    }
+
+}
 
 
 @media screen and (max-width: 1150px) {
